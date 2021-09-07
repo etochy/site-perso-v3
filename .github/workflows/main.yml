@@ -34,3 +34,12 @@ jobs:
 
       - name: display result
         run: echo build okay
+
+      - name: Compression
+        run: tar -cvzf livrable.tar.gz ./dist
+
+      - name: Envoi au serveur
+        run: scp livrable.tar.gz ubuntu@151.80.136.193/home/ubuntu/data/site_perso/www
+
+      - name: Décompression client
+        run: ssh ubuntu@151.80.136.193 tar -xvf /home/ubuntu/data/site_perso/www/livrable.tar.gz -C /home/ubuntu/data/site_perso/www/
