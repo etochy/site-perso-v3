@@ -3,40 +3,40 @@
     <router-link to="/">
       <h4 class="title-nav-bar">Launay-Esteban</h4>
     </router-link>
-    <button
+    <!-- <button
       class="button button-outline button-round color-primary "
       @click="toggleMenu"
     >
       <menu-logo class="basic-icon" />
-    </button>
+    </button> -->
   </div>
-  <div v-if="openMenu" class="menu-container">
+  <!-- <div v-if="openMenu" class="menu-container">
     <side-menu :closeMenu="closeMenu" />
-  </div>
+  </div> -->
 </template>
 
 <script>
-import MenuLogo from "@/assets/menu-logo.svg?inline";
-import SideMenu from "./SideMenu.vue";
+// import MenuLogo from "@/assets/menu-logo.svg?inline";
+// import SideMenu from "./SideMenu.vue";
 
 export default {
   name: "NavBar",
   components: {
-    MenuLogo,
-    SideMenu,
+    // MenuLogo,
+    // SideMenu,
   },
   data() {
     return {
-      openMenu: false,
+      // openMenu: false,
     };
   },
   methods: {
-    toggleMenu() {
-      this.openMenu = !this.openMenu;
-    },
-    closeMenu() {
-      this.openMenu = false;
-    },
+    // toggleMenu() {
+    //   this.openMenu = !this.openMenu;
+    // },
+    // closeMenu() {
+    //   this.openMenu = false;
+    // },
   },
 };
 </script>
@@ -50,15 +50,16 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 5px;
+  color: white;
 }
 
 .title-nav-bar {
   margin: 0;
 }
 
-.menu-container {
+/* .menu-container {
   position: absolute;
   right: 0px;
   top: 3em;
-}
+} */
 </style>

@@ -6,7 +6,7 @@
     <div
       :class="
         !background
-          ? 'white-background '
+          ? 'white-background title-page'
           : 'title-page side-detail-text side-detail'
       "
     >
@@ -32,6 +32,8 @@ export default {
 <style scoped>
 .title-page {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .white-background {

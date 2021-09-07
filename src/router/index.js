@@ -1,6 +1,8 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import MainPage from '../views/MainPage.vue'
 import TravelsPage from '../views/TravelsPage.vue'
+import VideoGamesPage from '../views/VideoGamesPage.vue'
+import SideProjectsPage from '../views/SideProjectsPage.vue'
 
 const routes = [
   {
@@ -12,6 +14,16 @@ const routes = [
     path: '/travels',
     name: 'Travels',
     component: TravelsPage
+  },
+  {
+    path: '/video-games',
+    name: 'Video-Games',
+    component: VideoGamesPage
+  },
+  {
+    path: '/side-projects',
+    name: 'Side-Projects',
+    component: SideProjectsPage
   },
   {
     path: '/:catchAll(.*)',

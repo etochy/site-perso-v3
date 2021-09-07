@@ -16,22 +16,22 @@
         <em>Click to discover them</em>
       </div>
     </router-link>
-    <div class="subject-details image-background video-game-background">
+    <router-link to="/video-games" class="subject-details image-background video-game-background">
       <div class="side-detail side-detail-text">
         <h2>Video games</h2>
         <span>Couples of video games experimentation</span>
         <em>Click to discover them</em>
       </div>
       <div class="side-detail"></div>
-    </div>
-    <div class="subject-details image-background code-background">
+    </router-link>
+    <router-link to="/side-projects" class="subject-details image-background code-background">
       <div class="side-detail"></div>
       <div class="side-detail side-detail-text">
         <h2>Side projects</h2>
         <span>Work in progress on several side projects</span>
         <em>Click to discover them</em>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
