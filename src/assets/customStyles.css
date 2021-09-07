@@ -1,0 +1,93 @@
+body {
+  --primary-color: rgb(46, 213, 255);
+  --neutral-color: rgb(138, 138, 138);
+  --secondary-color: rgb(252, 76, 120);
+}
+
+/* PRIMARY COLOR Style */
+.color-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.color-primary.button-clear,
+.color-primary.button-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+.color-primary.button-clear {
+  border-color: transparent;
+}
+
+/* SECONDARY COLOR Style */
+.color-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.color-secondary.button-clear,
+.color-secondary.button-outline {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.color-secondary.button-clear {
+  border-color: transparent;
+}
+
+/* NEUTRAL COLOR Style */
+.color-neutral {
+  background-color: var(--neutral-color);
+  border-color: var(--neutral-color);
+}
+.color-neutral.button-clear,
+.color-neutral.button-outline {
+  background-color: transparent;
+  color: var(--neutral-color);
+}
+.color-neutral.button-clear {
+  border-color: transparent;
+}
+
+/* Button sizes*/
+.button-small {
+  font-size: 0.8rem;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  padding: 0 1.5rem;
+}
+
+.button-large {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+}
+
+.button-round {
+    height: 3.5em;
+    width: 3.5em;
+    padding: 0;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* TEXT color */
+.primary-text {
+    color: var(--primary-color);    
+    fill: var(--primary-color);
+}
+
+.secondary-text {
+    color: var(--secondary-color);    
+    fill: var(--secondary-color);
+}
+
+.neutral-text {
+    color: var(--neutral-color);    
+    fill: var(--neutral-color);
+}
+
+.basic-icon {
+    fill: #606c76;
+}
