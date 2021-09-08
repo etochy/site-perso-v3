@@ -33,8 +33,8 @@
     >
       <div class="side-detail"></div>
       <div class="side-detail side-detail-text">
-        <h2>Side projects</h2>
-        <span>Work in progress on several side projects</span>
+        <h2>{{ $t("sideproject.title") }}</h2>
+        <span>{{ $t("sideproject.desc") }}</span>
         <em>{{ $t("common.discover") }}</em>
       </div>
     </router-link>

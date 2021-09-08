@@ -62,6 +62,19 @@
     "videogame.game3.title":"Jeu 3",
     "videogame.game3.text":"Un jeu de tir à la troisieme personne avec une IA et une carte simple",
     "videogame.game3.subtext":"2019",
+    
+    "sideproject.title":"Projets personnels",
+    "sideproject.desc":"Travail en cours sur différents projets personnels",
+    "sideproject.text":"Un rapide apercue de mes projets personnels",
+    "sideproject.subtext":"https://github.com/etochy",
+
+    "sideproject.website.title":"Site Web",
+    "sideproject.website.text":"Mon site est en constante évoluion, de VueJs2 en 2018 à VueJs3 aujourd'hui en passant par Angular 7 en 2019",
+    "sideproject.website.subtext":"2018 - 2021",
+
+    "sideproject.vps.title":"VPS Personnel",
+    "sideproject.vps.text":"Mon site ainsi que d'autres projets sont hébergés sur un VPS OVH. Cela me permet de continuer à faire de l'administration systeme",
+    "sideproject.vps.subtext":"2021",
 
     "common.discover":"Cliquer pour découvrir"
 }
