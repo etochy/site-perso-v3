@@ -1,9 +1,9 @@
 <template>
   <div class="subjects-container">
     <title-page
-      title="Hello World"
-      text="A Website without anything really important"
-      subText="Made by the AMAZING Esteban Launay"
+      :title="$t('welcome.title')"
+      :text="$t('welcome.text')"
+      :subText="$t('welcome.subtext')"
     />
     <router-link
       to="/travels"
@@ -11,25 +11,31 @@
     >
       <div class="side-detail"></div>
       <div class="side-detail side-detail-text">
-        <h2>Travels</h2>
-        <span>Love to travel</span>
-        <em>Click to discover them</em>
+        <h2>{{ $t("travels.title") }}</h2>
+        <span>{{ $t("travels.desc") }}</span>
+        <em>{{ $t("common.discover") }}</em>
       </div>
     </router-link>
-    <router-link to="/video-games" class="subject-details image-background video-game-background">
+    <router-link
+      to="/video-games"
+      class="subject-details image-background video-game-background"
+    >
       <div class="side-detail side-detail-text">
-        <h2>Video games</h2>
-        <span>Couples of video games experimentation</span>
-        <em>Click to discover them</em>
+        <h2>{{ $t("videogame.title") }}</h2>
+        <span>{{ $t("videogame.desc") }}</span>
+        <em>{{ $t("common.discover") }}</em>
       </div>
       <div class="side-detail"></div>
     </router-link>
-    <router-link to="/side-projects" class="subject-details image-background code-background">
+    <router-link
+      to="/side-projects"
+      class="subject-details image-background code-background"
+    >
       <div class="side-detail"></div>
       <div class="side-detail side-detail-text">
         <h2>Side projects</h2>
         <span>Work in progress on several side projects</span>
-        <em>Click to discover them</em>
+        <em>{{ $t("common.discover") }}</em>
       </div>
     </router-link>
   </div>

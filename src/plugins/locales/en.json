@@ -1,0 +1,68 @@
+{
+    "welcome.title": "Hello World",
+    "welcome.text":"A Website without anything really important",
+    "welcome.subtext":"Made by the AMAZING Esteban Launay",
+
+    "travels.title":"Travels",
+    "travels.desc":"Love to travel",
+    "travels.text":"A quick view of my travels",
+
+    "travels.northfrance.title":"North of France",
+    "travels.northfrance.text":"Northern France tour, 3000km in 6 days",
+    "travels.northfrance.subtext":"July 2021",
+
+    "travels.southfrance.title":"South of France",
+    "travels.southfrance.text":"Southern France tour, 5500km in 3 weeks",
+    "travels.southfrance.subtext":"July 2020",
+
+    "travels.indonesia.title":"Indonesia",
+    "travels.indonesia.text":"End of an 1 year trip around Asia, Bali and Java",
+    "travels.indonesia.subtext":"July 2019",
+
+    "travels.malaysia.title":"Malaysia",
+    "travels.malaysia.text":"1 month in malaysia with a week-end trip in Singapor",
+    "travels.malaysia.subtext":"June 2019",
+
+    "travels.thailand.title":"Thailand",
+    "travels.thailand.text":"1 month in Thailand, from North to South with some island visit",
+    "travels.thailand.subtext":"May 2019",
+
+    "travels.laos.title":"Laos",
+    "travels.laos.text":"One of my favorites places during this trip, 1 month from South to North",
+    "travels.laos.subtext":"April 2019",
+
+    "travels.cambodia.title":"Cambodia",
+    "travels.cambodia.text":"One month from East to South then North, a flat but lovely country",
+    "travels.cambodia.subtext":"March 2019",
+
+    "travels.vietnam.title":"Vietnam",
+    "travels.vietnam.text":"3 months to enjoy this awesome country, a backpack, a motor bike and it's a dream come true",
+    "travels.vietnam.subtext":"January - February 2019",
+
+    "travels.nepal.title":"Nepal",
+    "travels.nepal.text":"Country in between of India and China, lots of mountains and hiking",
+    "travels.nepal.subtext":"November 2018",
+
+    "travels.india.title":"India",
+    "travels.india.text":"First country of this one year trip, a cultural shock",
+    "travels.india.subtext":"November - December 2018",
+
+    "videogame.title":"Video Games",
+    "videogame.desc":"Couples of video games experimentation",
+    "videogame.text":"A quick view of my video games projects",
+    "videogame.subtext":"The goal of this projects is to experiment with Unreal engine and video games creation",
+
+    "videogame.game1.title":"Game 1",
+    "videogame.game1.text":"A third person action game playable from 1 to 4 in split screen with configurable difficulty, the goal is to survive",
+    "videogame.game1.subtext":"2019",
+
+    "videogame.game2.title":"Game 2",
+    "videogame.game2.text":"A first person shooter with simple IA and very basic map, the goal is to reach a point in the map without dying",
+    "videogame.game2.subtext":"2019",
+
+    "videogame.game3.title":"Game 3",
+    "videogame.game3.text":"A third person shooter with simple IA and simple map",
+    "videogame.game3.subtext":"2019",
+
+    "common.discover":"Click to discover"
+}
