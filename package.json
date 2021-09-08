@@ -6,7 +6,10 @@
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "compress": "tar -cvzf livrable.tar.gz ./dist",
+    "send": "scp livrable.tar.gz ubuntu@151.80.136.193:/home/ubuntu/data/site_perso/www",
+    "deploy": "ssh ubuntu@151.80.136.193 tar -xvf /home/ubuntu/data/site_perso/www/livrable.tar.gz -C /home/ubuntu/data/site_perso/www/"
   },
   "dependencies": {
     "core-js": "^3.6.5",
