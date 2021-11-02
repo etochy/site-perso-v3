@@ -3,6 +3,7 @@ import MainPage from '../views/MainPage.vue'
 import TravelsPage from '../views/TravelsPage.vue'
 import VideoGamesPage from '../views/VideoGamesPage.vue'
 import SideProjectsPage from '../views/SideProjectsPage.vue'
+import AsteroGame from '../views/AsteroGame.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/side-projects',
     name: 'Side-Projects',
     component: SideProjectsPage
+  },
+  {
+    path: '/video-games/astero-game',
+    name: 'Astero-Game',
+    component: AsteroGame
   },
   {
     path: '/:catchAll(.*)',

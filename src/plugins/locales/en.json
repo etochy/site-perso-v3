@@ -64,6 +64,10 @@
     "videogame.game3.text":"A third person shooter with simple IA and simple map",
     "videogame.game3.subtext":"2019",
 
+    "videogame.game4.title":"Game 4",
+    "videogame.game4.text":"A Javascript game where you dodge asteroids",
+    "videogame.game4.subtext":"2021",
+
     "sideproject.title":"Side Project",
     "sideproject.desc":"Work in progress on several side projects",
     "sideproject.text":"A quick view of my side projects",
@@ -77,5 +81,10 @@
     "sideproject.vps.text":"Hosting my Website and some others projects on a VPS provided by OVH, keeps me in touch with systems administration",
     "sideproject.vps.subtext":"2021",
 
-    "common.discover":"Click to discover"
+    "common.discover":"Click to discover",
+
+    "asterogame.score": "",
+    "asterogame.pseudo": "",
+    "asterogame.lost": ""
+
 }

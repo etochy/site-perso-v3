@@ -7,19 +7,25 @@
       background="photos/code.jpg"
     />
     <div v-for="(project, index) in projects" :key="index">
-      <div
-        class="subject-details image-background "
-        :style="`background-image: url(${project.image})`"
-      >
-        <div v-if="index % 2 === 0" class="side-detail side-detail-text">
+      <div class="subject-details">
+        <div v-if="index % 2 === 0" class="side-detail side-detail-text side-detail-text-grey">
           <h2>{{ $t(project.title) }}</h2>
           <span>{{ $t(project.text) }}</span>
           <em>{{ $t(project.date) }}</em>
         </div>
-        <div v-if="index % 2 === 0" class="side-detail" :alt="project.title" />
+        <div
+          v-if="index % 2 === 0"
+          class="side-detail image-background "
+          :style="`background-image: url(${project.image})`"
+          :alt="project.title"
+        />
 
-        <div v-if="index % 2 === 1" class="side-detail" />
-        <div v-if="index % 2 === 1" class="side-detail side-detail-text">
+        <div
+          v-if="index % 2 === 1"
+          class="side-detail image-background "
+          :style="`background-image: url(${project.image})`"
+        />
+        <div v-if="index % 2 === 1" class="side-detail side-detail-text side-detail-text-grey">
           <h2>{{ $t(project.title) }}</h2>
           <span>{{ $t(project.text) }}</span>
           <em>{{ $t(project.date) }}</em>

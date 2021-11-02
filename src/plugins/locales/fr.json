@@ -62,7 +62,11 @@
     "videogame.game3.title":"Jeu 3",
     "videogame.game3.text":"Un jeu de tir à la troisieme personne avec une IA et une carte simple",
     "videogame.game3.subtext":"2019",
-    
+
+    "videogame.game4.title":"Jeu 4",
+    "videogame.game4.text":"Un jeu en Javascript ou on évite des astéroids",
+    "videogame.game4.subtext":"2021",
+
     "sideproject.title":"Projets personnels",
     "sideproject.desc":"Travail en cours sur différents projets personnels",
     "sideproject.text":"Un rapide apercue de mes projets personnels",
@@ -76,5 +80,9 @@
     "sideproject.vps.text":"Mon site ainsi que d'autres projets sont hébergés sur un VPS OVH. Cela me permet de continuer à faire de l'administration systeme",
     "sideproject.vps.subtext":"2021",
 
-    "common.discover":"Cliquer pour découvrir"
+    "common.discover":"Cliquer pour découvrir",
+
+    "asterogame.score": "",
+    "asterogame.pseudo": "",
+    "asterogame.lost": ""
 }

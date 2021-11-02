@@ -10,8 +10,7 @@ export default {
 };
 </script>
 
-<style >
-
+<style>
 body {
   margin: 0px;
 }
@@ -52,6 +51,11 @@ a {
   color: white;
 }
 
+.side-detail-text-grey{
+  background-color: inherit;
+  color: inherit;
+}
+
 .title-background {
   min-height: 15em;
   align-items: center;
@@ -64,5 +68,9 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+.hover:hover {
+  background-color: rgb(212, 212, 212);
+  filter: brightness(0.8);
 }
 </style>

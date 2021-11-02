@@ -7,10 +7,10 @@
     />
     <router-link
       to="/travels"
-      class="subject-details image-background travel-background"
+      class="subject-details hover"
     >
-      <div class="side-detail"></div>
-      <div class="side-detail side-detail-text">
+      <div class="side-detail image-background travel-background"></div>
+      <div class="side-detail side-detail-text side-detail-text-grey">
         <h2>{{ $t("travels.title") }}</h2>
         <span>{{ $t("travels.desc") }}</span>
         <em>{{ $t("common.discover") }}</em>
@@ -18,21 +18,21 @@
     </router-link>
     <router-link
       to="/video-games"
-      class="subject-details image-background video-game-background"
+      class="subject-details hover"
     >
-      <div class="side-detail side-detail-text">
+      <div class="side-detail side-detail-text side-detail-text-grey">
         <h2>{{ $t("videogame.title") }}</h2>
         <span>{{ $t("videogame.desc") }}</span>
         <em>{{ $t("common.discover") }}</em>
       </div>
-      <div class="side-detail"></div>
+      <div class="side-detail image-background video-game-background"></div>
     </router-link>
     <router-link
       to="/side-projects"
-      class="subject-details image-background code-background"
+      class="subject-details hover"
     >
-      <div class="side-detail"></div>
-      <div class="side-detail side-detail-text">
+      <div class="side-detail image-background code-background"></div>
+      <div class="side-detail side-detail-text side-detail-text-grey">
         <h2>{{ $t("sideproject.title") }}</h2>
         <span>{{ $t("sideproject.desc") }}</span>
         <em>{{ $t("common.discover") }}</em>
@@ -52,14 +52,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.subject-details {
-  background-blend-mode: luminosity;
-}
-
-.subject-details:hover {
-  background-blend-mode: unset;
-}
-
 .travel-background {
   background-image: url("/photos/solo_travel_germany.jpeg");
 }

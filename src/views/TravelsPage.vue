@@ -6,19 +6,25 @@
       background="photos/solo_travel_germany.jpeg"
     />
     <div v-for="(travel, index) in travels" :key="index">
-      <div
-        class="subject-details image-background "
-        :style="`background-image: url(${travel.image})`"
-      >
-        <div v-if="index % 2 === 0" class="side-detail side-detail-text">
+      <div class="subject-details">
+        <div v-if="index % 2 === 0" class="side-detail side-detail-text side-detail-text-grey">
           <h2>{{ $t(travel.place) }}</h2>
           <span>{{ $t(travel.text) }}</span>
           <em>{{ $t(travel.date) }}</em>
         </div>
-        <div v-if="index % 2 === 0" class="side-detail" :alt="travel.place" />
+        <div
+          v-if="index % 2 === 0"
+          class="side-detail image-background"
+          :style="`background-image: url(${travel.image})`"
+          :alt="travel.place"
+        />
 
-        <div v-if="index % 2 === 1" class="side-detail" />
-        <div v-if="index % 2 === 1" class="side-detail side-detail-text">
+        <div
+          v-if="index % 2 === 1"
+          class="side-detail image-background"
+          :style="`background-image: url(${travel.image})`"
+        />
+        <div v-if="index % 2 === 1" class="side-detail side-detail-text side-detail-text-grey">
           <h2>{{ $t(travel.place) }}</h2>
           <span>{{ $t(travel.text) }}</span>
           <em>{{ $t(travel.date) }}</em>

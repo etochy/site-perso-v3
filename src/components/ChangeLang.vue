@@ -15,8 +15,8 @@ export default {
   methods: {
     changeLanguage(locale) {
       this.$i18n.locale = locale;
-      this.selectedLanguage = locale;
-      this.isDropdownOpened = false;
+      // this.selectedLanguage = locale;
+      // this.isDropdownOpened = false;
     },
   },
 };
