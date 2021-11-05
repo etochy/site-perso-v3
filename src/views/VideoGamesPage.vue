@@ -11,53 +11,60 @@
         :to="game.href"
         :active="game.href !== ''"
         class="subject-details hover"
+        exact-path
+        v-if="game.intern"
       >
-        <div v-if="index % 2 === 0" class="side-detail">
-          <div class="side-detail-text side-detail-text-grey">
-            <h2>{{ $t(game.title) }}</h2>
-            <span>{{ $t(game.text) }}</span>
-            <em>{{ $t(game.date) }}</em>
-          </div>
-        </div>
-        <div
-          v-if="index % 2 === 0"
-          :style="`background-image: url(${game.image})`"
-          class="side-detail image-background"
-          :alt="game.title"
+        <tuile
+          :title="$t(game.title)"
+          :text="$t(game.text)"
+          :subText="$t(game.date)"
+          :image="game.image"
+          :index="index"
         />
-
-        <div
-          v-if="index % 2 === 1"
-          class="side-detail image-background"
-          :style="`background-image: url(${game.image})`"
-        />
-        <div v-if="index % 2 === 1" class="side-detail">
-          <div class="side-detail-text side-detail-text-grey">
-            <h2>{{ $t(game.title) }}</h2>
-            <span>{{ $t(game.text) }}</span>
-            <em>{{ $t(game.date) }}</em>
-          </div>
-        </div>
       </router-link>
+      <a
+        :href="game.href"
+        class="subject-details hover"
+        v-else
+      >
+        <tuile
+          :title="$t(game.title)"
+          :text="$t(game.text)"
+          :subText="$t(game.date)"
+          :image="game.image"
+          :index="index"
+        />
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 import TitlePage from "../components/TitlePage.vue";
+import Tuile from "../components/Tuile.vue";
 
 export default {
-  components: { TitlePage },
+  components: { TitlePage, Tuile },
   name: "VideoGamesPage",
   data() {
     return {
       games: [
+        {
+          title: "videogame.game5.title",
+          date: "videogame.game5.subtext",
+          text: "videogame.game5.text",
+          image: "games/bombe-escape/bombe-escape.png",
+          href:
+            "https://etochy.github.io/games-js/bombeEscape/bombeEscape.html",
+          intern: false,
+        },
         {
           title: "videogame.game4.title",
           date: "videogame.game4.subtext",
           text: "videogame.game4.text",
           image: "games/astero/asteroidTexture.jpg",
           href: "/video-games/astero-game",
+          intern: true,
         },
         {
           title: "videogame.game3.title",
@@ -65,6 +72,7 @@ export default {
           text: "videogame.game3.text",
           image: "photos/nord-france.jpg",
           href: "",
+          intern: false,
         },
         {
           title: "videogame.game2.title",
@@ -72,6 +80,7 @@ export default {
           text: "videogame.game2.text",
           image: "photos/nord-france.jpg",
           href: "",
+          intern: false,
         },
         {
           title: "videogame.game1.title",
@@ -79,6 +88,7 @@ export default {
           text: "videogame.game1.text",
           image: "photos/nord-france.jpg",
           href: "",
+          intern: false,
         },
       ],
     };
@@ -87,12 +97,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.image-background {
-}
-
-.side-detail-text {
-  height: 100%;
-  width: 100%;
-}
-</style>
+<style scoped></style>

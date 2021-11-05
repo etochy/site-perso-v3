@@ -7,28 +7,13 @@
     />
     <div v-for="(travel, index) in travels" :key="index">
       <div class="subject-details">
-        <div v-if="index % 2 === 0" class="side-detail side-detail-text side-detail-text-grey">
-          <h2>{{ $t(travel.place) }}</h2>
-          <span>{{ $t(travel.text) }}</span>
-          <em>{{ $t(travel.date) }}</em>
-        </div>
-        <div
-          v-if="index % 2 === 0"
-          class="side-detail image-background"
-          :style="`background-image: url(${travel.image})`"
-          :alt="travel.place"
+        <tuile
+          :title="$t(travel.place)"
+          :text="$t(travel.text)"
+          :subText="$t(travel.date)"
+          :image="travel.image"
+          :index="index"
         />
-
-        <div
-          v-if="index % 2 === 1"
-          class="side-detail image-background"
-          :style="`background-image: url(${travel.image})`"
-        />
-        <div v-if="index % 2 === 1" class="side-detail side-detail-text side-detail-text-grey">
-          <h2>{{ $t(travel.place) }}</h2>
-          <span>{{ $t(travel.text) }}</span>
-          <em>{{ $t(travel.date) }}</em>
-        </div>
       </div>
     </div>
   </div>
@@ -36,9 +21,10 @@
 
 <script>
 import TitlePage from "../components/TitlePage.vue";
+import Tuile from "../components/Tuile.vue";
 
 export default {
-  components: { TitlePage },
+  components: { TitlePage, Tuile },
   name: "TravelsPage",
   data() {
     return {

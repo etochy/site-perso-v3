@@ -8,38 +8,24 @@
     />
     <div v-for="(project, index) in projects" :key="index">
       <div class="subject-details">
-        <div v-if="index % 2 === 0" class="side-detail side-detail-text side-detail-text-grey">
-          <h2>{{ $t(project.title) }}</h2>
-          <span>{{ $t(project.text) }}</span>
-          <em>{{ $t(project.date) }}</em>
-        </div>
-        <div
-          v-if="index % 2 === 0"
-          class="side-detail image-background "
-          :style="`background-image: url(${project.image})`"
-          :alt="project.title"
+        <tuile
+          :title="$t(project.title)"
+          :text="$t(project.text)"
+          :subText="$t(project.date)"
+          :image="project.image"
+          :index="index"
         />
-
-        <div
-          v-if="index % 2 === 1"
-          class="side-detail image-background "
-          :style="`background-image: url(${project.image})`"
-        />
-        <div v-if="index % 2 === 1" class="side-detail side-detail-text side-detail-text-grey">
-          <h2>{{ $t(project.title) }}</h2>
-          <span>{{ $t(project.text) }}</span>
-          <em>{{ $t(project.date) }}</em>
-        </div>
-      </div>
+      </div> 
     </div>
   </div>
 </template>
 
 <script>
 import TitlePage from "../components/TitlePage.vue";
+import Tuile from "../components/Tuile.vue";
 
 export default {
-  components: { TitlePage },
+  components: { TitlePage, Tuile },
   name: "SideProjectsPage",
   data() {
     return {
