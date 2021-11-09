@@ -64,13 +64,17 @@
     "videogame.game3.text":"A third person shooter with simple IA and simple map",
     "videogame.game3.subtext":"2019",
 
-    "videogame.game4.title":"Game 4",
+    "videogame.game4.title":"Astero escape",
     "videogame.game4.text":"A Javascript game where you dodge asteroids",
     "videogame.game4.subtext":"2021",
 
-    "videogame.game5.title":"Game 5",
+    "videogame.game5.title":"Bombs dodge",
     "videogame.game5.text":"A Javascript game where you dodge growing bombes",
     "videogame.game5.subtext":"2021",
+
+    "videogame.game6.title":"Break out",
+    "videogame.game6.text":"A simple break out game",
+    "videogame.game6.subtext":"2021",
 
     "sideproject.title":"Side Project",
     "sideproject.desc":"Work in progress on several side projects",

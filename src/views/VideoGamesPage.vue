@@ -50,6 +50,15 @@ export default {
     return {
       games: [
         {
+          title: "videogame.game6.title",
+          date: "videogame.game6.subtext",
+          text: "videogame.game6.text",
+          image: "games/casse-brique/casse-brique.png",
+          href:
+            "https://etochy.github.io/games-js/brique-game/index.html",
+          intern: false,
+        },
+        {
           title: "videogame.game5.title",
           date: "videogame.game5.subtext",
           text: "videogame.game5.text",
