@@ -4,6 +4,7 @@ import TravelsPage from '../views/TravelsPage.vue'
 import VideoGamesPage from '../views/VideoGamesPage.vue'
 import SideProjectsPage from '../views/SideProjectsPage.vue'
 import AsteroGame from '../views/AsteroGame.vue'
+import Photos from '../views/Photos.vue'
 
 const routes = [
   {
@@ -15,6 +16,11 @@ const routes = [
     path: '/travels',
     name: 'Travels',
     component: TravelsPage
+  },
+  {
+    path: '/travels/pictures',
+    name: 'Pictures',
+    component: Photos
   },
   {
     path: '/video-games',
