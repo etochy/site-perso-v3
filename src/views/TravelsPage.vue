@@ -21,16 +21,14 @@
       </router-link>
     </div>
   </div>
-  <photos v-if="folder" :folder="folder" />
 </template>
 
 <script>
 import TitlePage from "../components/TitlePage.vue";
 import Tuile from "../components/Tuile.vue";
-import Photos from "./Photos.vue";
 
 export default {
-  components: { TitlePage, Tuile, Photos },
+  components: { TitlePage, Tuile },
   name: "TravelsPage",
   data() {
     return {

@@ -1,12 +1,17 @@
 <template>
   <div class="pictures-container">
-    <img
+    <a
       v-for="(picture, index) in pictures"
       :key="index"
-      :src="url + folder + '/' + picture"
-      class="picture"
-    />
-    <p v-if="pictures.length === 0">{{$t('common.nopictures')}}</p>
+      :href="url + folder + '/' + picture"
+      target="_blank"
+    >
+      <div class="container-img">
+        <img :src="url + folder + '/' + picture" class="picture" />
+        <span class="centered">{{ $t("common.displaypicture") }}</span>
+      </div>
+    </a>
+    <p v-if="pictures.length === 0">{{ $t("common.nopictures") }}</p>
   </div>
 </template>
 
@@ -71,7 +76,7 @@ export default {
 
           const array = [...result.matchAll(regexp)];
           array.forEach((e) => {
-            this.pictures.push(e["0"].substring(2, e["0"].length - 1));
+            this.pictures.unshift(e["0"].substring(2, e["0"].length - 1));
           });
         });
     },
@@ -91,5 +96,27 @@ export default {
   max-height: 20em;
   margin: 5px;
   border-radius: 10px;
+}
+.container-img:hover {
+  opacity: 0.7;
+}
+.container-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.centered:hover {
+  opacity: 1;
 }
 </style>

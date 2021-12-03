@@ -5,6 +5,7 @@ import VideoGamesPage from '../views/VideoGamesPage.vue'
 import SideProjectsPage from '../views/SideProjectsPage.vue'
 import AsteroGame from '../views/AsteroGame.vue'
 import Photos from '../views/Photos.vue'
+import PhotographyPage from '../views/PhotographyPage.vue'
 
 const routes = [
   {
@@ -19,7 +20,17 @@ const routes = [
   },
   {
     path: '/travels/pictures',
-    name: 'Pictures',
+    name: 'Pictures-travels',
+    component: Photos
+  },
+  {
+    path: '/photography',
+    name: 'Photography',
+    component: PhotographyPage
+  },
+  {
+    path: '/photography/pictures',
+    name: 'Pictures-photography',
     component: Photos
   },
   {

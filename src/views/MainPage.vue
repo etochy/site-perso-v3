@@ -6,6 +6,18 @@
       :subText="$t('welcome.subtext')"
     />
     <router-link
+      to="/photography"
+      class="subject-details hover"
+    >
+      <div class="side-detail side-detail-text side-detail-text-grey">
+        <h2>{{ $t("photography.title") }}</h2>
+        <span>{{ $t("photography.desc") }}</span>
+        <em>{{ $t("common.discover") }}</em>
+      </div>
+      <div class="side-detail image-background photography-background"></div>
+    </router-link>
+
+    <router-link
       to="/travels"
       class="subject-details hover"
     >
@@ -52,6 +64,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.photography-background{
+    background-image: url("/photos/photography.jpg");
+}
 .travel-background {
   background-image: url("/photos/solo_travel_germany.jpeg");
 }
