@@ -50,6 +50,14 @@ export default {
     return {
       games: [
         {
+          title: "videogame.boardgame.title",
+          date: "videogame.boardgame.subtext",
+          text: "videogame.boardgame.text",
+          image: "photos/boardGame.jpg",
+          href: '/video-games/board-game',
+          intern: true,
+        },
+        {
           title: "videogame.game6.title",
           date: "videogame.game6.subtext",
           text: "videogame.game6.text",

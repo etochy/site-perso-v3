@@ -115,5 +115,18 @@
 
   "themes.others.title": "Others",
   "themes.others.subtext": "",
-  "themes.others.text": "Meltpolt of styles"
+  "themes.others.text": "Meltpolt of styles",
+
+  "videogame.boardgame.title": "Board games",
+  "videogame.boardgame.text": "Online Board games",
+  "videogame.boardgame.subtext": "2022",
+
+  "boardgame.title": "Board games",
+  "boardgame.text": "Play with your friends at some board games",
+
+  "boardgame.tab.creator": "Creator",
+  "boardgame.tab.name": "Room's name",
+  "boardgame.tab.maxSize": "Max players",
+  "boardgame.tab.currentSize": "Players",
+  "boardgame.tab.join": "Join"
 }

@@ -114,5 +114,20 @@
 
   "themes.others.title": "Autres",
   "themes.others.subtext": "",
-  "themes.others.text": "Un mélange de styles différents"
+  "themes.others.text": "Un mélange de styles différents",
+
+  "videogame.boardgame.title": "Jeux de plateau",
+  "videogame.boardgame.text": "Jeux de plateau en ligne sur navigateur",
+  "videogame.boardgame.subtext": "2022",
+
+  "boardgame.title": "Jeux de plateau",
+  "boardgame.text": "Jouez avec vos amis a des jeux de plateau",
+
+  "boardgame.tab.creator": "Createur",
+  "boardgame.tab.name": "Nom de la salle",
+  "boardgame.tab.maxSize": "Nombre max de joueur",
+  "boardgame.tab.currentSize": "Nombre de joueurs",
+  "boardgame.tab.join": "Rejoindre"
+  
+
 }

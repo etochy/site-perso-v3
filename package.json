@@ -12,22 +12,23 @@
     "deploy": "ssh ubuntu@151.80.136.193 tar -xvf /home/ubuntu/data/site_perso/www/livrable.tar.gz -C /home/ubuntu/data/site_perso/www/"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "axios": "^0.26.1",
+    "core-js": "^3.21.1",
     "milligram": "^1.4.1",
-    "vue": "^3.0.0",
-    "vue-i18n": "^9.1.7",
-    "vue-router": "^4.0.0-0"
+    "vue": "^3.2.31",
+    "vue-i18n": "^9.1.9",
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
-    "@intlify/vue-i18n-loader": "^3.0.0",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@intlify/vue-i18n-loader": "^3.3.0",
+    "@vue/cli-plugin-babel": "^4.5.17",
+    "@vue/cli-plugin-eslint": "^4.5.17",
+    "@vue/cli-plugin-router": "^4.5.17",
+    "@vue/cli-service": "^4.5.17",
+    "@vue/compiler-sfc": "^3.2.31",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0",
+    "eslint-plugin-vue": "^7.20.0",
     "vue-cli-plugin-svg": "~0.2.1"
   },
   "eslintConfig": {

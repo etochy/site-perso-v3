@@ -51,7 +51,7 @@ a {
   color: white;
 }
 
-.side-detail-text-grey{
+.side-detail-text-grey {
   background-color: inherit;
   color: inherit;
 }
@@ -72,5 +72,32 @@ a {
 .hover:hover {
   background-color: rgb(212, 212, 212);
   filter: brightness(0.8);
+}
+
+.popup {
+  position: absolute;
+  padding: 5px;
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 5px;
+}
+
+.popup.small {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 5%;
+  max-height: calc(95% - 4em);
+}
+.popup.medium {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  max-height: calc(95% - 4em);
+}
+.popup.large {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 5%;
+  max-height: calc(95% - 4em);
 }
 </style>
