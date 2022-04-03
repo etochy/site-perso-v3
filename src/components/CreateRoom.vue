@@ -1,53 +1,62 @@
 <template>
   <button
-    class="button button-outline"
+    class="button button-outline color-primary"
     @click="openPopup"
     :disabled="pseudo ? false : true"
   >
-    Create
+    {{ $t("boardgame.tab.create") }}
   </button>
 
-  <form v-if="isOpen" class="popup medium">
-    <fieldset>
-      <label for="creatorField">Creator</label>
+  <div v-if="isOpen" class="popup medium">
+    <fieldset class="subjects-container create-form">
+      <label for="creatorField">{{ $t("boardgame.tab.creator") }}</label>
       <input
         type="text"
-        placeholder="Createur"
+        :placeholder="$t('boardgame.tab.creator')"
         id="creatorField"
         disabled
         v-model="newRoom.creator"
       />
-      <label for="nameField">Name</label>
+      <label for="nameField">{{ $t("boardgame.tab.name") }}</label>
       <input
         type="text"
-        placeholder="Name"
+        :placeholder="$t('boardgame.tab.name')"
         id="nameField"
-        :model="newRoom.name"
+        v-model="newRoom.name"
+        required
       />
-      <label for="nameField">Password</label>
+      <label for="passwordField">{{ $t("boardgame.tab.password") }}</label>
       <input
         type="password"
-        placeholder="Password"
+        :placeholder="$t('boardgame.tab.password')"
         id="passwordField"
-        :model="newRoom.password"
+        v-model="newRoom.password"
+        required
       />
-      <label for="nameField">maxSize</label>
+      <label for="maxSizeField">{{ $t("boardgame.tab.maxSize") }}</label>
       <input
         type="number"
-        placeholder="10"
+        :placeholder="$t('boardgame.tab.maxSize')"
         id="maxSizeField"
-        :model="newRoom.maxSize"
+        v-model="newRoom.maxSize"
+        required
       />
-      <button class="button button-outline" @click="closePopup">Cancel</button>
-      <button
-        class="button button-outline"
-        @click="createRoom"
-        :disabled="isValid() ? false : true"
-      >
-        Create
-      </button>
+      <div class="validation-buttons">
+        <button
+          class="button button-outline color-secondary"
+          @click="closePopup"
+        >
+          {{ $t("common.cancel") }}
+        </button>
+        <button class="button button-outline color-primary" @click="createRoom">
+          {{ $t("common.validate") }}
+        </button>
+      </div>
+      <p class="secondary-text" v-if="error">
+        {{ $t("boardgame.tab.create.error") }}
+      </p>
     </fieldset>
-  </form>
+  </div>
 </template>
 
 <script>
@@ -58,6 +67,7 @@ export default {
   },
   data() {
     return {
+      error: false,
       isOpen: false,
       newRoom: {
         creator: "",
@@ -67,15 +77,32 @@ export default {
       },
     };
   },
+  emits: ['room-creation'],
   methods: {
     isValid() {
-      return (this.newRoom.name && this.newRoom.password && this.newRoom.maxSize >= 2 && this.newRoom.creator);
+      if (
+        this.newRoom.name &&
+        this.newRoom.password &&
+        this.newRoom.maxSize >= 2 &&
+        this.newRoom.creator
+      )
+        return true;
+      else return false;
     },
     createRoom() {
-      this.$emit("roomCreation", this.newRoom);
+      console.log(this.isValid());
+      if (!this.isValid()) {
+        this.error = true;
+        console.log("ko");
+      } else {
+        this.error = false;
+        this.$emit("room-creation", this.newRoom);
+        this.closePopup();
+      }
     },
     openPopup() {
       console.log("open");
+      this.error = false;
       this.newRoom.creator = this.pseudo;
       console.log(this.pseudo);
       console.log(this.newRoom.creator);
@@ -93,3 +120,17 @@ export default {
   },
 };
 </script>
+<style scoped>
+.create-form {
+  align-items: start;
+}
+.validation-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: flex-end;
+}
+.button {
+  margin-left: 10px;
+}
+</style>

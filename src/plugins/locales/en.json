@@ -1,4 +1,7 @@
 {
+  "common.validate": "Accept",
+  "common.cancel": "Cancel",
+
   "welcome.title": "Hello World",
   "welcome.text": "A Website without anything really important",
   "welcome.subtext": "Made by the AMAZING Esteban Launay",
@@ -128,5 +131,9 @@
   "boardgame.tab.name": "Room's name",
   "boardgame.tab.maxSize": "Max players",
   "boardgame.tab.currentSize": "Players",
-  "boardgame.tab.join": "Join"
+  "boardgame.tab.join": "Join",
+  "boardgame.tab.create": "Create room",
+  "boardgame.tab.password": "Password",
+  "boardgame.tab.create.error": "All fields must be complete"
+
 }

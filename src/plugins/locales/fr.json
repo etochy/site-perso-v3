@@ -1,4 +1,7 @@
 {
+  "common.validate": "Valider",
+  "common.cancel": "Annuler",
+
   "welcome.title": "Hello World",
   "welcome.text": "Un site sans rien de spécial",
   "welcome.subtext": "Créé par l'INCROYABLE Esteban Launay",
@@ -125,9 +128,11 @@
 
   "boardgame.tab.creator": "Createur",
   "boardgame.tab.name": "Nom de la salle",
-  "boardgame.tab.maxSize": "Nombre max de joueur",
+  "boardgame.tab.maxSize": "Nombre max de joueurs",
   "boardgame.tab.currentSize": "Nombre de joueurs",
-  "boardgame.tab.join": "Rejoindre"
-  
+  "boardgame.tab.join": "Rejoindre",
+  "boardgame.tab.create": "Créer salle",
+  "boardgame.tab.password": "Mot de passe",
+  "boardgame.tab.create.error": "Merci de remplir tous les champs"
 
 }

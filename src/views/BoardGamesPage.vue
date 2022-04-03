@@ -6,9 +6,10 @@
       background="photos/boardGame.jpg"
     />
     <div>
-      <input type="text" placeholder="Pseudo" id="nameField" v-model="pseudo"/>
+      <input type="text" placeholder="Pseudo" id="pseudoField" v-model="pseudo" required/>
     </div>
-    <create-room :pseudo="pseudo" />
+    <create-room :pseudo="pseudo" 
+      @room-creation="callCreateRoom"/>
     <div>
       <table>
         <thead>
@@ -28,7 +29,7 @@
             <th>{{ room.maxSize }}</th>
             <th>
               <input
-                class="button button-clear"
+                class="button button-clear color-neutral"
                 :value="$t('boardgame.tab.join')"
                 :disabled="pseudo ? false : true"
               />
@@ -42,7 +43,7 @@
 <script>
 import TitlePage from "../components/TitlePage.vue";
 import CreateRoom from "../components/CreateRoom.vue";
-import { getRooms } from "../services/BoardGameServices";
+import { getRooms, createRoom } from "../services/BoardGameServices";
 
 export default {
   components: { TitlePage, CreateRoom },
@@ -59,7 +60,14 @@ export default {
         this.rooms = resp.data;
       });
     },
-
+    callCreateRoom(newRoom) {
+      console.log("create", newRoom);
+      createRoom(newRoom).then(resp => {
+        console.log(resp.data);
+      });
+      // TO DO : REDIRECTION Vers salle créée
+      alert("redirection a venir");
+    }
   },
   mounted() {
     this.init();
